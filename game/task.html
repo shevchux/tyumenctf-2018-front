@@ -1,0 +1,89 @@
+<div class="wtask-hr"></div>
+<div class="wtask" id="task-body">
+    <input type="hidden" id="task-short-name" value="Crypto100">
+    <input type="hidden" id="task-id" value="1">
+    <input type="hidden" id="task-solved" value="0">
+    <input type="hidden" id="task-solvedteamscount" value="3">
+    <div class="wtask-name">XOR under NEON light</div>
+    <div class="wtask-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, consectetur. Fugiat quia accusamus quidem, autem iusto, sit saepe eveniet quaerat!
+    <br/><br/>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi inventore ipsa laboriosam dolorum et labore, laborum consequatur ipsum blanditiis reiciendis, asperiores veniam architecto nisi odit! Vitae officia expedita error ea doloribus molestiae, aliquid commodi quisquam corporis dolores, odio eum mollitia!
+    <br/><br/>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur asperiores ad, perspiciatis dicta aliquam maxime placeat nisi ex est libero blanditiis veniam sit cum facilis nemo quos <a href="">perferendis</a>, illum assumenda. Beatae reprehenderit, nobis repudiandae ut. Atque ipsam illum vero, perspiciatis necessitatibus sapiente minus animi cum tempora, velit repellat adipisci accusamus delectus, pariatur in porro quos alias. Vitae iure corporis quae?</div>
+    
+    <div class="wtask-attch-block">
+        <div class="wtask-attch-title">1 вложение</div>
+        <ul class="wtask-attch-list">
+            <li>
+                <div class="wtask-item">
+                    <i></i><a href="#" download>Секретный файл.bin</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div class="wtask-hr"></div>
+    <form class="wtask-send" style="display: block;" onsubmit="SendFlag(this);return false;">
+        <button type="submit" class="btn wtask-send-btn">Отправить</button>
+        <div class="wtask-send-input-wrapper">
+            <input type="text" placeholder="TyumenCTF{[a-zA-Z0-9_\-]*}" class="wtask-send-input" id="task-flag" autofocus autocomplete="off">
+        </div>
+        <div class="clearfix"></div>
+    </form>
+    <div class="wtask-solved-msg" id="task-solved-message" style="display: none;">
+        <span>✓</span>Задание решено.
+    </div>
+</div>
+<div class="wtask" id="hints-body" style="display:none;">
+    <input type="hidden" id="input-hints-count" value="3">
+    <ul class="hint-list">
+        <li>
+            <div class="hint-item">
+                <div class="hint-title">
+                    <div class="hint-price">100</div>
+                    <a href="#" class="hint-buy" onclick="BuyHint(1, 100, this);return false;">Получить</a>
+                    <div class="hint-name">Hint 1</div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="hint-body hint-body-hidden"></div>
+            </div>
+        </li>
+        <li>
+            <div class="hint-item">
+                <div class="hint-title">
+                    <div class="hint-price">200</div>
+                    <a href="#" class="hint-buy" onclick="BuyHint(1, 200, this);return false;" style="display:none;">Получить</a>
+                    <div class="hint-name">Hint 2</div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="hint-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laborum porro explicabo nam, animi totam iusto officia molestias dolorem sapiente ducimus sequi ut, deserunt nihil.</div>
+            </div>
+        </li>
+        <li>
+            <div class="hint-item">
+                <div class="hint-title">
+                    <div class="hint-price">300</div>
+                    <a href="#" class="hint-buy" onclick="BuyHint(1, 300, this);return false;" style="display:none;">Получить</a>
+                    <div class="hint-name">Hint 3</div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="hint-body">Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit. Officiis laborum porro explicabo nam, animi totam iusto officia molestias dolorem sapiente ducimus sequi ut, deserunt nihil.</div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="wtask" id="solved-body" style="display:none;"></div>
+<div class="wtask" id="writeup-body" style="display:none;">
+    <input type="hidden" id="input-writeup-available" value="0">
+    <div class="wtask-attch-block" style="margin-bottom:0;padding-bottom:0;">
+        <div class="wtask-attch-title">1 вложение</div>
+        <ul class="wtask-attch-list">
+            <li>
+                <div class="wtask-item">
+                    <i></i><a href="#" download>Решение задачи.docx</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>

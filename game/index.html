@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TyumenCTF – Задания</title>
+    <link rel="stylesheet" href="css/digital-timer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="head back-wall back-wall-y">
+            <div class="wrapper">
+                <div class="hteam">
+                    <div class="hteam-left">
+                        <img src="../default-icons/cyan_01.jpg" alt="logo" class="hteam-photo">
+                    </div>
+                    <div class="hteam-right">
+                        <div class="hteam-title">
+                            <span class="hteam-name" title="Demo account">Demo account</span>
+                            <span class="hteam-arrow-expand" tabindex="1">
+                                <i></i>
+                            </span>
+                            <ul class="hteam-menu-list" tabindex="2">
+                                <li>
+                                    <a href="../" class="hteam-menu-item">Выход</a>
+                                </li> 
+                            </ul>
+                        </div>
+                        <div class="hteam-position">
+                            <span class="hteam-point"><span id="point-count">300</span> баллов</span>
+                            &middot;
+                            <span class="hteam-place"><span id="place-number">2</span> место</span>
+                        </div>
+                        <div class="hteam-type">Команда вне зачёта</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="hmenu">
+                    <ul class="hmenu-list">
+                        <li>
+                            <a href="index.html" class="hmenu-item yellow">Задания</a>
+                        </li>
+                        <li>
+                            <a href="score.html" class="hmenu-item green">Рейтинг</a>
+                        </li>
+                        <li>
+                            <a href="rules.html" class="hmenu-item red">Правила</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hlogo">
+                    <i class="hlogo-image"></i>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </header>
+        <section class="site-content">
+            <div class="wrapper">
+                <ul class="taskcategory-list">
+                    <li>
+                        <div class="taskcategory-item taskcategory-color2 ">
+                            <div class="taskcategory-name taskcategory-solved">Web</div>
+                            <ul class="tasklist">
+                                <li>
+                                    <a href="#" onclick="TaskOpen(1, 2, this);return false;" class="tasklist-item tasklist-item-solved">
+                                        <div class="tasklist-price">150<span>&middot;</span></div>
+                                        <div class="tasklist-name">Купи флаг</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(2, 2, this);return false;" class="tasklist-item tasklist-item-solved">
+                                        <div class="tasklist-price">250<span>&middot;</span></div>
+                                        <div class="tasklist-name">ВБлокчейне</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(3, 2, this);return false;" class="tasklist-item tasklist-item-solved">
+                                        <div class="tasklist-price">300<span>&middot;</span></div>
+                                        <div class="tasklist-name">Сделай сам</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="taskcategory-item taskcategory-color1">
+                            <div class="taskcategory-name">Stegano</div>
+                            <ul class="tasklist">
+                                <li>
+                                    <a href="#" onclick="TaskOpen(1, 1, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">100<span>&middot;</span></div>
+                                        <div class="tasklist-name">Phone Record</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(2, 1, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">150<span>&middot;</span></div>
+                                        <div class="tasklist-name">Some data</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(3, 1, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">150<span>&middot;</span></div>
+                                        <div class="tasklist-name">Raw colors</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(4, 1, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">200<span>&middot;</span></div>
+                                        <div class="tasklist-name">Ошибка админа</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="taskcategory-item taskcategory-color3">
+                            <div class="taskcategory-name">Joy</div>
+                            <ul class="tasklist">
+                                <li>
+                                    <a href="#" onclick="TaskOpen(1, 3, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">100<span>&middot;</span></div>
+                                        <div class="tasklist-name">Neon 📌 check-in</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(2, 3, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">200<span>&middot;</span></div>
+                                        <div class="tasklist-name">M@incraft</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(3, 3, this);return false;" class="tasklist-item tasklist-item-solved">
+                                        <div class="tasklist-price">300<span>&middot;</span></div>
+                                        <div class="tasklist-name">/hack_this_channel</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="taskcategory-item taskcategory-color4">
+                            <div class="taskcategory-name">Misc</div>
+                            <ul class="tasklist">
+                                <li>
+                                    <a href="#" onclick="TaskOpen(1, 4, this);return false;" class="tasklist-item tasklist-item-solved">
+                                        <div class="tasklist-price">100<span>&middot;</span></div>
+                                        <div class="tasklist-name">Captured Traffic</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(2, 4, this);return false;" class="tasklist-item tasklist-item-solved">
+                                        <div class="tasklist-price">200<span>&middot;</span></div>
+                                        <div class="tasklist-name">Phone problem</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(3, 4, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">300<span>&middot;</span></div>
+                                        <div class="tasklist-name">Why so serious?</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(4, 4, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">400<span>&middot;</span></div>
+                                        <div class="tasklist-name">Shaluni</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(5, 4, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">450<span>&middot;</span></div>
+                                        <div class="tasklist-name">Patch me</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="taskcategory-item taskcategory-color5">
+                            <div class="taskcategory-name">Osint</div>
+                            <ul class="tasklist">
+                                <li>
+                                    <a href="#" onclick="TaskOpen(1, 5, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">100<span>&middot;</span></div>
+                                        <div class="tasklist-name">VK to all of you</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(2, 5, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">250<span>&middot;</span></div>
+                                        <div class="tasklist-name">Исповедь золотой рыбки по имени Тайлер</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(3, 5, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">350<span>&middot;</span></div>
+                                        <div class="tasklist-name">Library</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(4, 5, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">450<span>&middot;</span></div>
+                                        <div class="tasklist-name">Musical Journey</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(5, 5, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">250<span>&middot;</span></div>
+                                        <div class="tasklist-name">Seriatim</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="taskcategory-item taskcategory-color6">
+                            <div class="taskcategory-name">Crypto</div>
+                            <ul class="tasklist">
+                                <li>
+                                    <a href="#" onclick="TaskOpen(1, 6, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">100<span>&middot;</span></div>
+                                        <div class="tasklist-name">XOR under NEON light</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(2, 6, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">150<span>&middot;</span></div>
+                                        <div class="tasklist-name">ROTen Criminals</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(3, 6, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">200<span>&middot;</span></div>
+                                        <div class="tasklist-name">Crypto Slashes</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(4, 6, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">350<span>&middot;</span></div>
+                                        <div class="tasklist-name">SMS Beep</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="TaskOpen(5, 6, this);return false;" class="tasklist-item">
+                                        <div class="tasklist-price">400<span>&middot;</span></div>
+                                        <div class="tasklist-name">Эль-Гамаль forever!</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <section id="notify-container" class="notify-container">
+    </section>
+    
+    <input type="hidden" name="NowUTC" id="NowUTC" value="2522347522">
+    <section id="task-item-modal" class="modal">
+        <div class="modal-window" id="task-item-window" style="width:600px;">
+            <div class="modal-head">
+                <div class="modal-head-text wtask-shortname"><span id="task-item-head"></span></div>
+                <ul class="modal-head-buttons" id="li-tabs">
+                    <li id="li-task-tab">
+                        <a href="#" onclick="OpenTaskWindowTab(1, this);return false;" class="selected">Таск</a>
+                    </li>
+                    <li id="li-hints-tab">
+                        <a href="#" onclick="OpenTaskWindowTab(2, this);return false;">Подсказки<span id="span-hints-count">0</span></a>
+                    </li>
+                    <li id="li-solved-tab">
+                        <a href="#" onclick="OpenTaskWindowTab(3, this);return false;">Решили<span id="span-solved-count">0</span></a>
+                    </li>
+                    <li id="li-writeup-tab">
+                        <a href="#" onclick="OpenTaskWindowTab(4, this);return false;">Write-Up</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="modal-content" id="task-item-content"></div>
+        </div>
+    </section>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>var LastData = { score: 300, place: 2, category: 4, newsCount: 4, hasUnreadNews: 0 };
+    </script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            taskItemModal = new InitModal("task-item-modal", false);
+        });
+    </script>
+</body>
+</html>

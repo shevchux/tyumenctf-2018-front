@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'DS-Digital Italic';
+	src: url('../fonts/ds-digital-italic.eot'); 
+	src: url('../fonts/ds-digital-italic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ds-digital-italic.woff') format('woff'), 
+		 url('../fonts/ds-digital-italic.ttf') format('truetype'),
+		 url('../fonts/ds-digital-italic.svg#ds-digital-italic') format('svg'); 
+	font-style: italic;
+	font-weight: 400; 
+}
+
+.digital-timer {
+    position: relative;
+    font-size: 1em;
+}
+
+.digital-timer .digital-timer-digit {
+    font-size: 1em;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline;
+    z-index: 2;
+    font-family: 'DS-Digital Italic';
+    text-shadow: 0 0 4px #f00,0 0 4px #f00, 0 0 40px #f00,0 0 40px #f00;
+}
+
+.digital-timer .digital-timer-digit-green {
+    text-shadow: 0 0 4px #00d149,0 0 4px #00d149,0 0 4px #00d149, 0 0 40px #00d149,0 0 40px #00d149,0 0 40px #00d149;
+}
+
+.digital-timer .digital-timer-digit-blue {
+    text-shadow: 0 0 2px #00ebe2,0 0 2px #00ebe2,0 0 2px #00ebe2, 0 0 20px #00ebe2,0 0 20px #00ebe2,0 0 20px #00ebe2;
+}
+
+.digital-timer .digital-timer-digit-yellow {
+    text-shadow: 0 0 4px #ff0, 0 0 40px #ff0,0 0 40px #ff0;
+}
+
+.digital-timer .digital-timer-back {
+    font-size: 1em;
+    color: #362c2c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline;
+    z-index: 1;
+    font-family: 'DS-Digital Italic';
+}

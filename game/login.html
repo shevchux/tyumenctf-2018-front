@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TyumenCTF – Авторизация</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<body>
+    <div class="site-wrapper">
+        <header class="head back-wall back-wall-y">
+            <div class="wrapper">
+                <div class="hmenu">
+                    <ul class="hmenu-list">
+                        <li>
+                            <a href="index.html" class="hmenu-item yellow">Авторизация</a>
+                        </li>
+                        <li>
+                            <a href="score.html" class="hmenu-item green">Рейтинг</a>
+                        </li>
+                        <li>
+                            <a href="rules.html" class="hmenu-item red">Правила</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hlogo">
+                    <i class="hlogo-image"></i>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </header>
+        
+        
+        
+        
+        
+        <section class="site-content">
+            <div class="wrapper">
+                <h1 class="page-title yellow">Авторизация</h1>
+                <form onsubmit="Auth(this);return false;" class="auth-form">
+                    <label class="auth-group">
+                        <p>Логин</p>
+                        <input type="text" name="login" placeholder="team000" autofocus required>
+                    </label>
+                    <label class="auth-group">
+                        <p>Пароль</p>
+                        <input type="password" name="password" placeholder="password" required>
+                    </label>
+                    <button type="submit" class="auth-button">Войти</button>
+                </form>
+            </div>
+       </section>
+       
+       
+       
+       
+       
+       
+       <footer class="footer back-wall back-wall-y">
+            <div class="wrapper">
+                <div class="footer-hr"></div>
+                <div class="footer-text">Соревнования и проверяющая система <strong>«CTFParty»</strong> подготовлены командой <strong>CatchFM</strong> и<br> энтузиастами кафедры информационной безопасности ТюмГУ.</div>
+            </div>
+        </footer>
+    </div>
+    <section id="notify-container" class="notify-container">
+    </section>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TyumenCTF – Рейтинг</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="head back-wall back-wall-g">
+            <div class="wrapper">
+                <div class="hteam">
+                    <div class="hteam-left">
+                        <img src="../default-icons/cyan_01.jpg" alt="logo" class="hteam-photo">
+                    </div>
+                    <div class="hteam-right">
+                        <div class="hteam-title">
+                            <span class="hteam-name" title="Demo account">Demo account</span>
+                            <span class="hteam-arrow-expand" tabindex="1">
+                                <i></i>
+                            </span>
+                            <ul class="hteam-menu-list" tabindex="2">
+                                <li>
+                                    <a href="../" class="hteam-menu-item">Выход</a>
+                                </li> 
+                            </ul>
+                        </div>
+                        <div class="hteam-position">
+                            <span class="hteam-point"><span id="point-count">300</span> баллов</span>
+                            &middot;
+                            <span class="hteam-place"><span id="place-number">2</span> место</span>
+                        </div>
+                        <div class="hteam-type">Команда вне зачёта</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="hmenu">
+                    <ul class="hmenu-list">
+                        <li>
+                            <a href="index.html" class="hmenu-item yellow">Задания</a>
+                        </li>
+                        <li>
+                            <a href="score.html" class="hmenu-item green">Рейтинг</a>
+                        </li>
+                        <li>
+                            <a href="rules.html" class="hmenu-item red">Правила</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hlogo">
+                    <i class="hlogo-image"></i>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </header>
+        <section class="site-content">
+            <div class="wrapper">
+                <h1 class="page-title green">Рейтинг</h1>
+                <div class="rating-body">
+                    <div class="rating-sort-block">
+                        <div class="rating-sort-table">Категории команд</div>
+                        <ul class="sort-chbox-list">
+                            <li>
+                                <input type="radio" name="category" value="0" class="sort-chbox" onchange="GetCategory(0);" id="category0" checked>
+                                <label class="sort-chbox-item" for="category0">Все команды</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="category" value="1" class="sort-chbox" onchange="GetCategory(1);" id="category1" checked>
+                                <label class="sort-chbox-item" for="category1">Студенты</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="category" value="2" class="sort-chbox" onchange="GetCategory(2);" id="category2" checked>
+                                <label class="sort-chbox-item" for="category2">Школьники (без Тюменцев)</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="category" value="3" class="sort-chbox" onchange="GetCategory(3);" id="category3" checked>
+                                <label class="sort-chbox-item" for="category3">Школьники Тюмени</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="category" value="4" class="sort-chbox" onchange="GetCategory(4);" id="category4" checked>
+                                <label class="sort-chbox-item" for="category4">Вне зачёта</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rating-table-block" id="rating-table-content"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer back-wall back-wall-g">
+            <div class="wrapper">
+                <div class="footer-hr"></div>
+                <div class="footer-text">Соревнования и проверяющая система <strong>«CTFParty»</strong> подготовлены командой <strong>CatchFM</strong> и<br> энтузиастами кафедры информационной безопасности ТюмГУ.</div>
+            </div>
+        </footer>
+    </div>
+    <section id="rating-team-tasks-modal" class="modal">
+        <div class="modal-window" style="width:400px;">
+            <div class="modal-head">
+                <span class="close modal-close-icon" title="Закрыть">&times;</span>
+                <div class="modal-head-text" id="rating-team-tasks-head"></div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="modal-content" id="rating-team-tasks-content"></div>
+        </div>
+    </section>
+    <section id="notify-container" class="notify-container">
+    </section>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            GetCategory(1);
+            teamTaskModal = new InitModal("rating-team-tasks-modal", true);
+        });
+    </script>
+</body>
+</html>

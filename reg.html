@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TyumenCTF 2018</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/login.css">
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?152"></script>
+	<script type="text/javascript">VK.init({apiId: 6354536, onlyWidgets: true});</script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="head wall-background">
+            <div class="head-logo">
+                <a href="index.html" class="head-logo-image" title="TyumenCTF 2018">TyumenCTF 2018</a>
+                <div class="head-logo-time">
+                    <i class="head-logo-time-icon"></i>
+                    <span>
+                        01&nbsp;апреля&nbsp;09:00
+                    </span>
+                    <a href="https://www.timeanddate.com/worldclock/fixedtime.html?day=1&month=04&year=2018&hour=09&min=00&sec=00&p1=166" class="head-logo-time-region" target="_blank">Msk</a>
+                </div>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-list">
+                    <li>
+                        <a href="about.html" class="head-menu-item head-menu-item-blue">О соревновании</a>
+                    </li>
+                    <li>
+                        <a href="members.html" class="head-menu-item head-menu-item-purple">Участники</a>
+                    </li>
+                    <li class="last">
+                        <a href="organizers.html" class="head-menu-item head-menu-item-green">Организаторы</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+        <section class="main">
+            <div class="main-wrapper">
+				<div class="main-content">
+                    <div class="main-page-wrapper">
+                        <h2 class="page-title">Регистрация</h2>
+                        <p>Регистрация закрыта.</p>
+                    </div>
+                    <!-- <div class="main-page-wrapper">
+                        <h2 class="page-title">Регистрация</h2>
+                        <form method="post" enctype="multipart/form-data" id="reg-form" onsubmit="SendForm(this); return false;">
+                            <div class="reg-form">
+                                <div class="reg-title">Команда</div>
+                                <div class="reg-team-about">
+                                    <div class="reg-team-photo">
+                                        <div class="reg-team-uploaded-img" title="Логотип команды" id="img-state-uploaded" style="display: none;">
+                                            <a href="#" onclick="RemoveImage(); return false;">✖</a>
+                                        </div>
+                                        <label class="reg-team-image" title="Логотип команды" id="img-state-empty">
+                                            <span>
+                                                Логотип<br>команды
+                                                <i>Опционально</i>
+                                            </span>
+                                            <img id="img" src="">
+                                            <input type="file" name="logo" onchange="SelectImage(this);" accept="image/x-png,image/gif,image/jpeg" />
+                                        </label>
+                                    </div>
+                                    <div class="reg-team-info">
+                                        <input type="text" name="name" placeholder="Название команды" title="Название команды" required autofocus>
+                                        <input type="text" name="location" placeholder="Населенный пункт" title="Населенный пункт" required>
+                                        <div class="reg-team-school">
+                                            <div class="reg-team-school-type">
+                                                <select name="type" title="Зачет" required>
+                                                    <option value="1">Студенты</option>
+                                                    <option value="2">Школьники</option>
+                                                </select>
+                                            </div>
+                                            <div class="reg-team-school-name">
+                                                <input type="text" name="name" placeholder="Образовательное учреждение" title="Образовательное учреждение" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reg-title">Участники<a href="#" class="reg-title-add-member" id="btn-add-member" onclick="members.Add(); return false;">Добавить участника</a></div>
+                                <div class="reg-team-members">
+                                    <ul class="reg-team-list" id="member-list">
+                                        <li>
+                                            <div class="reg-team-item">
+                                                <div class="reg-team-member">
+                                                    <p style="font-size: 20px;">Капитан</p>
+                                                </div>
+                                                <div class="reg-team-member-info">
+                                                    <input type="text" name="player[name][]" placeholder="ФИО" title="ФИО" required>
+                                                    <input type="email" name="player[email][]" placeholder="Электронная почта" title="Электронная почта" required>
+                                                </div>
+                                                <input type="hidden" name="timezone" value="2" required>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reg-team-complete">
+                                    <div class="reg-team-complete-margin">
+                                        <label class="reg-team-complete-agreement"><input type="checkbox" onchange="ToggleAgreementCheckbox(this);"><span>Я осведомлен и подтверждаю согласие всех участников команды на обработку их персональных данных и отнесение их к общедоступным для целей настоящего соревнования.</span></label>
+                                        <button type="submit" id="btn-reg" disabled>Зарегистрироваться</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div> -->
+				</div>
+			</div>
+        </section>
+        <footer class="bottom wall-background">
+            <div class="bottom-copyright-block">
+                <div class="bottom-copyright-logo">
+                    <i class="bottom-copyright-imkn-logo"></i>
+                </div>
+                <div class="bottom-copyright-text">
+                    <p class="bottom-copyright-text-type1">Тюменский Государственный Университет</p>
+                    <p class="bottom-copyright-text-type2">Институт Математики и Компьютерных Наук</p>
+                    <div class="bottom-copyright-bottom">
+                        <span>Copyright 2018</span> Студенты кафедры <abbr title="Информационной безопасности">ИБ</abbr>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="bottom-contacts-block">
+                <div class="bottom-contact-button-line">
+                    <ul class="bottom-contact-list">
+                        <li>
+                            <a href="https://t.me/tyumenctf" target="_blank" title="Telegram" class="bottom-contact-item bottom-contact-telegram">Telegram</a>
+                        </li>
+                        <li>
+                            <a href="https://vk.com/tyumenctf" target="_blank" title="VK" class="bottom-contact-item bottom-contact-vk">VK</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-contact-email-line">
+                    Почта для связи <a href="mailto:team@tyumenctf.ru">team@tyumenctf.ru</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <!-- <script src="scripts/reg.js"></script> -->
+</body>
+</html>
